@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f8fafc;
+}
+
+h1 {
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    height: 150px;
+    gap: 10px;
+    border: 2px solid #0f172a;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.item {
+    flex-grow: 1; /* Các item mặc định chia đều không gian trống (grow = 1) */
+    background-color: #bae6fd;
+    color: #0369a1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 1px solid #0284c7;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Định nghĩa riêng cho Item 2 để nó phát triển gấp đôi các item còn lại */
+.item-grow {
+    flex-grow: 2; 
+    background-color: #38bdf8;
+    color: #ffffff;
+    border-color: #0284c7;
+}
